@@ -9,3 +9,16 @@ provider "aws" {
     }
   }
 }
+
+provider "aws" {
+  alias  = "us_east-1"
+  region = "us-east-1"
+
+  default_tags {
+    tags = {
+      "owner"        = "DevopsTeam"
+      "project-name" = "dns-iac"
+      "managed-by"   = "terraform"
+    }
+  }
+}
