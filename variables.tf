@@ -14,3 +14,13 @@ variable "default_example_domain" {
   type    = string
   default = "school-guardian.net.br"
 }
+
+variable "mysql_identifier" {
+  type = string
+  default = "mysql-dev"
+}
+
+variable "mysql_subdomain" {
+  type = string
+  default = "mysql-db-dev"
+}
