@@ -13,14 +13,14 @@ resource "aws_route53_record" "example_subdomain" {
 }
 
 
-# resource "aws_route53_record" "db_mysql_subdomain" {
-#   zone_id = aws_route53_zone.primary.id
-#   name    = var.mysql_subdomain
-#   type    = "A"
+resource "aws_route53_record" "db_mysql_subdomain" {
+  zone_id = aws_route53_zone.primary.id
+  name    = var.mysql_subdomain
+  type    = "A"
 
-#   alias {
-#     name                   = data.aws_db_instance.mysql_instance.address
-#     zone_id                = data.aws_db_instance.mysql_instance.hosted_zone_id
-#     evaluate_target_health = false
-#   }
-# }
+  alias {
+    name                   = data.aws_db_instance.mysql_instance.address
+    zone_id                = data.aws_db_instance.mysql_instance.hosted_zone_id
+    evaluate_target_health = false
+  }
+}
