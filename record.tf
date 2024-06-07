@@ -19,7 +19,7 @@ resource "aws_route53_record" "db_mysql_subdomain" {
   type    = "A"
 
   alias {
-    name                   = data.aws_db_instance.mysql_instance.endpoint
+    name                   = data.aws_db_instance.mysql_instance.address
     zone_id                = data.aws_db_instance.mysql_instance.hosted_zone_id
     evaluate_target_health = false
   }
