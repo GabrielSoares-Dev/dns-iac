@@ -6,12 +6,6 @@ variable "example_subdomains" {
   default = {
     dev = {
       name = "dev"
-    },
-    stg = {
-      name = "stg"
-    },
-    prod = {
-      name = "prod"
     }
   }
 }
