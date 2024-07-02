@@ -12,7 +12,7 @@ variable "example_subdomains" {
 
 variable "default_example_domain" {
   type    = string
-  default = "school-guardian.net.br"
+  default = "gabrieltest.shop"
 }
 
 variable "mysql_identifier" {

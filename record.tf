@@ -6,7 +6,7 @@ resource "aws_route53_record" "example_subdomain" {
 
   alias {
     name                   = data.aws_ssm_parameter.zone_id_api_gateway_domain_name_dev.value
-    zone_id                = data.aws_ssm_parameter.api_gw_laravel_boilerplate_zone_id_dev.value
+    zone_id                = data.aws_ssm_parameter.api_gw_nestjs_boilerplate_zone_id_dev.value
     evaluate_target_health = false
 
   }
