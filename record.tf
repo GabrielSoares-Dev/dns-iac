@@ -5,8 +5,8 @@ resource "aws_route53_record" "example_subdomain" {
   type     = "A"
 
   alias {
-    name                   = data.aws_ssm_parameter.zone_id_api_gateway_domain_name_dev.value
-    zone_id                = data.aws_ssm_parameter.api_gw_nestjs_boilerplate_zone_id_dev.value
+    name                   = data.aws_ssm_parameter.boilerplate_nestjs_serverless_ssm_api_gw_domain_name.value
+    zone_id                = data.aws_ssm_parameter.boilerplate_nestjs_serverless_ssm_api_gw_domain_zone_id.value
     evaluate_target_health = false
   }
 }
