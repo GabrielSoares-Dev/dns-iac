@@ -1,4 +1,4 @@
-name: DEPLOY
+name: DEPLOY - DEV
 on:
   workflow_dispatch:
 env:
