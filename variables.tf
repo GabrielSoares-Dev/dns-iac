@@ -1,3 +1,8 @@
+variable "environment" {
+  type    = string
+  default = "DEV"
+}
+
 variable "example_subdomains" {
   type = map(object({
     name = string
@@ -24,3 +29,4 @@ variable "mysql_subdomain" {
   type    = string
   default = "mysql-db-dev"
 }
+
