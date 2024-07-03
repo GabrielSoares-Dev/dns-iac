@@ -12,10 +12,10 @@
 # }
 
 
-resource "aws_route53_record" "db_mysql_subdomain" {
-  zone_id = aws_route53_zone.primary.id
-  name    = var.mysql_subdomain
-  type    = "CNAME"
-  ttl     = 300
-  records = [data.aws_db_instance.mysql_instance.address]
-}
+# resource "aws_route53_record" "db_mysql_subdomain" {
+#   zone_id = aws_route53_zone.primary.id
+#   name    = var.mysql_subdomain
+#   type    = "CNAME"
+#   ttl     = 300
+#   records = [data.aws_db_instance.mysql_instance.address]
+# }
