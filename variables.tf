@@ -15,9 +15,8 @@ variable "example_subdomains" {
   }
 }
 
-variable "default_example_domain" {
+variable "domain" {
   type    = string
-  default = "gabrieltest.shop"
 }
 
 variable "mysql_identifier" {
